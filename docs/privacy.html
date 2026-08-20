@@ -31,7 +31,7 @@
 <body>
 
 <h1>港廣東話 — 私隱權政策</h1>
-<p class="updated">最後更新：2026 年 7 月 29 日</p>
+<p class="updated">最後更新：2026 年 8 月 20 日</p>
 
 <p>「港廣東話」（下稱「本應用程式」）係一個學習香港廣東話嘅 iOS 應用程式。我哋重視你嘅私隱，本政策說明本應用程式會處理啲乜嘢資料、點解要處理，以及交畀邊啲第三方。</p>
 
@@ -57,19 +57,14 @@
 <table>
   <tr><th>接收方</th><th>傳送咩</th><th>用途</th></tr>
   <tr>
-    <td>Groq（api.groq.com）</td>
-    <td>你喺 AI 功能打嘅文字；使用「AI 複習」時，會連同你嘅學習進度摘要（例如學過幾多單元、練習平均分）一齊傳送</td>
-    <td>產生 AI 導師嘅回覆</td>
+    <td>Groq, Inc.（api.groq.com，美國）</td>
+    <td>你喺「AI 複習」打或者用語音講嘅文字，連同學習進度摘要（學過邊啲單元同次數、發音練習次數同平均分、發音弱項嘅字詞同得分）。<strong>要你喺應用程式內明確同意咗先會傳送</strong></td>
+    <td>即時生成複習題目同批改答案</td>
   </tr>
   <tr>
     <td>Apple 語音識別</td>
     <td>你錄音嘅語音內容</td>
     <td>將你把聲轉成文字，用嚟評分同語音輸入</td>
-  </tr>
-  <tr>
-    <td>Google AdMob</td>
-    <td>裝置及廣告相關識別資料；如你透過 iOS 追蹤許可（ATT）同意，會包括廣告識別碼（IDFA）</td>
-    <td>顯示廣告、量度成效、防止廣告詐騙</td>
   </tr>
   <tr>
     <td>Apple（App Store）</td>
@@ -83,11 +78,13 @@
 <p>不過請注意：語音轉文字係使用 Apple 內建嘅語音識別服務，<strong>iOS 可能會將語音內容傳送到 Apple 嘅伺服器處理</strong>（視乎你部裝置同系統設定）。呢部分由 Apple 按其私隱政策處理。</p>
 
 <h3>2.2 AI 功能</h3>
-<p>你喺 AI 功能輸入嘅文字會傳送到 Groq 嘅伺服器處理，並由 Groq 按其私隱政策處理。請唔好喺 AI 對話入面輸入敏感個人資料（例如身分證號碼、銀行資料、健康狀況）。</p>
+<p>「複習」分頁嘅「AI 複習」會將你打或者用語音講嘅文字，連同你嘅學習進度摘要（學過邊啲單元同次數、發音練習次數同平均分、發音弱項嘅字詞同得分），傳送到 Groq, Inc.（美國）嘅伺服器，用嚟即時生成複習題目同批改答案。</p>
+<p><strong>第一次用之前，應用程式會先出一版說明，列明會傳送啲乜、傳送畀邊個、用嚟做咩；你撳咗「同意並開始」之後，先至會傳送任何資料。</strong>唔同意嘅話，應用程式其他所有功能照樣用得。你亦可以隨時喺「設定 → AI 複習 → 將資料送去 Groq」撤回同意，撤回之後就唔會再傳送任何資料。</p>
+<p>Groq 只會用你嘅內容即時生成回覆，唔會攞去訓練模型（依 Groq 商用 API 條款），其餘按 Groq 嘅私隱政策處理。<strong>你嘅錄音本身唔會傳送畀 Groq</strong> —— 語音輸入會先經 Apple 語音識別轉成文字，只有文字會傳送。請唔好喺 AI 對話入面輸入敏感個人資料（例如身分證號碼、銀行資料、健康狀況）。</p>
 
 <h3>2.3 廣告</h3>
-<p>本應用程式使用 Google AdMob 顯示廣告。購買完整版之後就唔會再顯示廣告。</p>
-<p>喺歐洲經濟區、英國及瑞士，我哋會喺顯示廣告前透過 Google 嘅同意管理平台（UMP）徵求你嘅同意；你可以隨時喺應用程式「設定 → 私隱 → 廣告私隱設定」<strong>更改或撤回</strong>你嘅選擇。喺 iOS 上，你亦可以喺「系統設定 → 私隱與安全性 → 追蹤」控制追蹤許可。</p>
+<p><strong>本版本（1.0）唔含任何廣告。</strong>應用程式唔會存取廣告識別碼（IDFA），亦唔會同任何廣告聯播網分享資料；應用程式嘅私隱清單（privacy manifest）聲明 <code>NSPrivacyTracking = false</code>。</p>
+<p>日後如果加返廣告，我哋會先更新本政策，並喺應用程式內另行徵求你嘅同意。</p>
 
 <h2>3. 我哋唔會做嘅嘢</h2>
 <ul>
@@ -100,11 +97,10 @@
 <p>本應用程式並非針對 13 歲以下兒童設計，亦唔會有意收集兒童嘅個人資料。</p>
 
 <h2>5. 你嘅權利</h2>
-<p>視乎你所在地區（例如歐盟 GDPR、英國 UK GDPR、加州 CCPA），你可能有權查閱、更正或刪除你嘅個人資料，以及撤回同意。由於本應用程式唔設帳戶、資料主要存喺你自己部裝置，你可以直接透過上述「刪除方法」自行行使；如涉及廣告同意，請使用應用程式內嘅「廣告私隱設定」。如有其他要求，可以用下面嘅電郵聯絡我哋。</p>
+<p>視乎你所在地區（例如歐盟 GDPR、英國 UK GDPR、加州 CCPA），你可能有權查閱、更正或刪除你嘅個人資料，以及撤回同意。由於本應用程式唔設帳戶、資料主要存喺你自己部裝置，你可以直接透過上述「刪除方法」自行行使；如涉及 AI 功能嘅同意，可以隨時喺應用程式「設定 → AI 複習」撤回。如有其他要求，可以用下面嘅電郵聯絡我哋。</p>
 
 <h2>6. 第三方私隱政策</h2>
 <ul>
-  <li>Google（AdMob）：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   <li>Groq：<a href="https://groq.com/privacy-policy/">groq.com/privacy-policy</a></li>
   <li>Apple：<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
 </ul>
@@ -120,7 +116,7 @@
 <div class="en">
 
 <h1>HK Cantonese — Privacy Policy</h1>
-<p class="updated">Last updated: 29 July 2026</p>
+<p class="updated">Last updated: 20 August 2026</p>
 
 <p>HK Cantonese ("the App") is an iOS app for learning Hong Kong Cantonese. This policy explains what data the App processes, why, and which third parties receive it.</p>
 
@@ -141,19 +137,14 @@
 <table>
   <tr><th>Recipient</th><th>What is sent</th><th>Purpose</th></tr>
   <tr>
-    <td>Groq (api.groq.com)</td>
-    <td>Text you type into the AI features. When using AI Review, a summary of your learning progress (e.g. units studied, average practice score) is included</td>
-    <td>Generating the AI tutor's replies</td>
+    <td>Groq, Inc. (api.groq.com, USA)</td>
+    <td>The text you type or dictate in AI Review, together with a summary of your learning progress (units studied and how often, practice count and average score, weak pronunciation items with their scores). <strong>Sent only after you give explicit consent in the App</strong></td>
+    <td>Generating your review questions and checking your answers</td>
   </tr>
   <tr>
     <td>Apple Speech Recognition</td>
     <td>The speech you record</td>
     <td>Converting speech to text for scoring and voice input</td>
-  </tr>
-  <tr>
-    <td>Google AdMob</td>
-    <td>Device and ad-related identifiers; includes the advertising identifier (IDFA) if you consent via iOS App Tracking Transparency</td>
-    <td>Serving ads, measuring performance, preventing ad fraud</td>
   </tr>
   <tr>
     <td>Apple (App Store)</td>
@@ -167,11 +158,13 @@
 <p>Please note that speech-to-text uses Apple's built-in speech recognition, and <strong>iOS may send the audio to Apple's servers</strong> for processing, depending on your device and system settings. That processing is governed by Apple's privacy policy.</p>
 
 <h3>2.2 AI features</h3>
-<p>Text you enter in the AI features is sent to Groq's servers and processed under Groq's privacy policy. Please do not enter sensitive personal information (such as identity numbers, banking details, or health information) into AI conversations.</p>
+<p>AI Review (in the Review tab) sends the text you type or dictate, together with a summary of your learning progress (units studied and how often, practice count and average score, weak pronunciation items with their scores), to the servers of Groq, Inc. (USA), which generates your review questions and checks your answers.</p>
+<p><strong>Before this happens for the first time, the App shows a disclosure screen naming exactly what is sent, who it is sent to and why; nothing is sent until you tap "Agree and start".</strong> If you decline, every other feature of the App remains fully usable. You can withdraw consent at any time under "Settings → AI Review → Send data to Groq", after which nothing further is sent.</p>
+<p>Groq uses your content only to generate the reply in real time and does not use it to train models (per Groq's commercial API terms); the rest is governed by Groq's privacy policy. <strong>Your audio is never sent to Groq</strong> — voice input is first transcribed by Apple's speech recognition, and only the resulting text is sent. Please do not enter sensitive personal information (such as identity numbers, banking details, or health information) into AI conversations.</p>
 
 <h3>2.3 Advertising</h3>
-<p>The App uses Google AdMob. Ads are removed permanently once you buy the full version.</p>
-<p>In the EEA, the UK and Switzerland, we request your consent through Google's User Messaging Platform before serving ads. You can <strong>change or withdraw</strong> your choice at any time via "Settings → Privacy → Ad privacy settings" in the App. On iOS you can also control tracking under "Settings → Privacy &amp; Security → Tracking".</p>
+<p><strong>This version (1.0) contains no advertising.</strong> The App does not access the advertising identifier (IDFA) and shares no data with any ad network; its privacy manifest declares <code>NSPrivacyTracking = false</code>.</p>
+<p>If advertising is added in a future version, this policy will be updated first and consent will be requested separately in the App.</p>
 
 <h2>3. What we do not do</h2>
 <ul>
@@ -184,11 +177,10 @@
 <p>The App is not directed at children under 13 and does not knowingly collect personal data from children.</p>
 
 <h2>5. Your rights</h2>
-<p>Depending on where you live (e.g. EU GDPR, UK GDPR, California CCPA), you may have rights to access, correct or delete your personal data, and to withdraw consent. Because the App has no accounts and data is kept on your own device, you can exercise these directly using the deletion steps above; for advertising consent, use "Ad privacy settings" in the App. For anything else, contact us at the address below.</p>
+<p>Depending on where you live (e.g. EU GDPR, UK GDPR, California CCPA), you may have rights to access, correct or delete your personal data, and to withdraw consent. Because the App has no accounts and data is kept on your own device, you can exercise these directly using the deletion steps above; for the AI feature, you can withdraw consent at any time under "Settings → AI Review" in the App. For anything else, contact us at the address below.</p>
 
 <h2>6. Third-party privacy policies</h2>
 <ul>
-  <li>Google (AdMob): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
   <li>Groq: <a href="https://groq.com/privacy-policy/">groq.com/privacy-policy</a></li>
   <li>Apple: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
 </ul>
